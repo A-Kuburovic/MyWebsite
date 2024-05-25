@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style-tabel.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="pic/alexandar - Logo_4.png" type="image/x-icon">
+        <title>Excel-Alex - Formler</title>
+    </head>
+
+    <body>
+        <aside>
+            <figure>
+                <div id="avatar">
+                    <a href="kontakt.html"><img src="pic/Profilbilled.jpg" alt="Profilbillede af ejeren af siden"></a>
+                </div>
+                <figcaption>Alexandar Kuburovic</figcaption>
+            </figure>
+                
+            <svg id="menu-burger" width="60" height="40" viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.03125 6.25H52.9688C53.2266 6.25 53.4375 6.39062 53.4375 6.5625V9.0625C53.4375 9.23438 53.2266 9.375 52.9688 9.375H7.03125C6.77344 9.375 6.5625 9.23438 6.5625 9.0625V6.5625C6.5625 6.39062 6.77344 6.25 7.03125 6.25ZM7.03125 30.625H52.9688C53.2266 30.625 53.4375 30.7656 53.4375 30.9375V33.4375C53.4375 33.6094 53.2266 33.75 52.9688 33.75H7.03125C6.77344 33.75 6.5625 33.6094 6.5625 33.4375V30.9375C6.5625 30.7656 6.77344 30.625 7.03125 30.625ZM7.03125 18.4375H52.9688C53.2266 18.4375 53.4375 18.5781 53.4375 18.75V21.25C53.4375 21.4219 53.2266 21.5625 52.9688 21.5625H7.03125C6.77344 21.5625 6.5625 21.4219 6.5625 21.25V18.75C6.5625 18.5781 6.77344 18.4375 7.03125 18.4375Z" fill="black"/>
+            </svg>
+
+            <nav>
+                <ul class="ul-menu">
+                    <li><a href="index.html" id="start">Start</a></li>
+                    <li><a href="formler.html" id="formler" style="background-color: #fff; border-bottom: 3px solid var(--green);">Formler</a></li>
+                    <li><a href="skabeloner.html" id="skabeloner">Skabeloner</a></li>
+                    <li><a href="kontakt.html" id="kontakt">Kontakt</a></li>
+                </ul>  
+            </nav>
+        </aside>
+
+        <main>
+            <h2 style="color: red;">Under opbygning</h2>
+
+            <div class="text">
+                <h1>Find your formula</h1>
+                <p>Find den formel du lige står om mangler! Opdag nye måder at bruge den og en masse andre formler på.</p>
+            </div>
+
+            <br><br>
+            <hr>
+            <br>
+
+            <section>
+                <div class="overview">
+                    <h3>Kategorier</h3>
+                    <p>Man kan opdele formler i forskellige ketagorier. Klik på en kategori og opdag de forskellige udvalgte formler.</p>
+                    <ul class="kategorier">
+                        <li><a href="#logisk">Logiske</a></li>
+                        <li><a href="#opslagogreferencer">Opslag og referencer</a></li>
+                        <li><a href="#dato">Dato og tid</a></li>
+                        <li><a href="#matematiske">Matematiske</a></li>
+                        <li><a href="#information">Information</a></li>
+                        <li><a href="#statistik">Statistik</a></li>
+                        <li><a href="#tekst">Tekst</a></li>
+                        <!-- <li><a href="#selvlavet">Selvlavet</a></li> -->
+                    </ul>
+                </div>
+<br><br>
+                <button onclick="showLogisk()">Logiske</button>
+            </section>
+
+            <br><br>
+            <hr>
+            <br><br>
+
+            <h2 class="formel-header logisk"></h2>Formler i kategorien logiske</h2>
+            <div class="cards logisk">
+                <div class="card">
+                    <div class="header">=HVIS()</div>
+                    <div class="content">
+                        <p>Undersøger om og en celle lever op til et kriterie. fx om en værdi er større end 500.</p>
+                    </div>
+                    <div class="footer">Logiske</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=ELLER()</div>
+                    <div class="content">
+                        <p>Undersøger om minimum 1 af flere kriterier er sande. fx om flere celler er større end 500. Viser SAND hvis minimum en test er SAND, ellers vises FALSK.</p>
+                    </div>
+                    <div class="footer">Logiske</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=OG()</div>
+                    <div class="content">
+                        <p>Undersøger om to kriterier er opfyldt. Der kan være flere end to kriterier.</</p>
+                    </div>
+                    <div class="footer">Logiske</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=IKKE()</div>
+                    <div class="content">
+                        <p>Undersøger om det modsatte af HVIS(). fx om 100 > 500 vises FALSK.</p></p>
+                    </div>
+                    <div class="footer">Logiske</div>
+                </div>
+            </div>
+            <script>                
+                function showLogisk() {
+                    let x = document.querySelector(".logisk");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                }
+                </script>
+            <!-- <br><br><br><br>
+            <hr> -->
+
+            <h2 class="formel-header" id="opslagogreferencer">Formler i kategorien opslag og referenecer</h2>
+            <div class="cards"  id="opslagogreferencer">
+                <div class="card">
+                    <div class="header">=LOPSLAG()</div>
+                    <div class="content">
+                        <p>Angiver en celleværdi i en kolonne ud fra kolonneværdi i en andet angivet område. Værdi findes til højre for opslagsområde.</p>
+                    </div>
+                    <div class="footer">Opslag og referenecer</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=VOPSLAG()</div>
+                    <div class="content">
+                        <p>Angiver en celleværdi i en røkke ud fra rækkeværdi i en andet angivet område. Værdi findes under opslagsområde.</p>
+                    </div>
+                    <div class="footer">Opslag og referenecer</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=XOPSLAG()</div>
+                    <div class="content">
+                        <p>Angiver en celleværdi i en kolonne ud fra række/kolonne værdi i en andet angivet område. Erstatter LOPSLAG og VOPSLAG.</p>
+                    </div>
+                    <div class="footer">Opslag og referenecer</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=FORSKYDNINGER()</div>
+                    <div class="content">
+                        <p>Angiver værdien af en celle ud fra angivet ankerpunkt, rækkenummer og kolonnenummer. Bruges oftest dynamisk.</p>
+                    </div>
+                    <div class="footer">Opslag og referenecer</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=INDEKS()</div>
+                    <div class="content">
+                        <p>Angiver en celles værdi ud fra cellenummer og kolonnenummer angivet. Bruges oftest dynamisk.</p>
+                    </div>
+                    <div class="footer">Opslag og referenecer</div>
+                </div>
+<!--                 
+                <div class="card">
+                    <div class="header">=INDIREKTE()</div>
+                    <div class="content">
+                        <p></p>
+                    </div>
+                    <div class="footer">Opslag og referenecer</div>
+                </div> -->
+                
+                <div class="card">
+                    <div class="header">=KOLONNE()</div>
+                    <div class="content">
+                        <p>Angiver kolonnenummer en celle har.</p>
+                    </div>
+                    <div class="footer">Opslag og referenecer</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=KOLONNER()</div>
+                    <div class="content">
+                        <p>Tæller hvor kolonner der er i et angivet område.</p>
+                    </div>
+                    <div class="footer">Opslag og referenecer</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=RÆKKER()</div>
+                    <div class="content">
+                        <p>Tæller hvor rækker der er i et angivet område.</p>
+                    </div>
+                    <div class="footer">Opslag og referenecer</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=RÆKKE()</div>
+                    <div class="content">
+                        <p>Angiver rækkernummer en celle har.</p>
+                    </div>
+                    <div class="footer">Opslag og referenecer</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=SAMMENLIGN()</div>
+                    <div class="content">
+                        <p>Angiver om en værid findes i et område. Det er muligt at lave næjagtigt eller "optil" match.
+
+                        </p>
+                    </div>
+                    <div class="footer">Opslag og referenecer</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=VÆLG()</div>
+                    <div class="content">
+                        <p>Vælger et område ud fra angivet indeksnummer.</p>
+                    </div>
+                    <div class="footer">Opslag og referenecer</div>
+                </div>
+                
+                <br><br><br><br>
+                <hr>
+            </div>
+            
+
+            <h2 class="formel-header" id="dato">Formler i kategorien dato og tid</h2>
+            <div class="cards"  id="dato">
+                <div class="card">
+                    <div class="header">=ANTAL.ARBEJDSDAGE()</div>
+                    <div class="content">
+                        <p>Viser arbejdsdage mellem to datoer (weekender fratrukket). Start-/slutdag er obligatoriske, ferie er valgtfri.</p>
+                    </div>
+                    <div class="footer">Dato og tid</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=DAG()</div>
+                    <div class="content">
+                        <p>Viser dagen ud fra en fuld dato. fx vil den 1/1-2022 give resultatet 1, og den 13/1-2022 vil blive 13.</p>
+                    </div>
+                    <div class="footer">Dato og tid</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=DATO()</div>
+                    <div class="content">
+                        <p>Generer en datoværdi. fx hvis du har fast dag og måned men årstal findes i en celle.</p>
+                    </div>
+                    <div class="footer">Dato og tid</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=IDAG()</div>
+                    <div class="content">
+                        <p>Viser hvilken dato det er idag. Den opdaterer automatisk, når du åbner din projektmappe.</p>
+                    </div>
+                    <div class="footer">Dato og tid</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=MINUT()</div>
+                    <div class="content">
+                        <p>Finder minuttallet i et tidspunkt. fx vil 06:30 give 30.</p>
+                    </div>
+                    <div class="footer">Dato og tid</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=MÅNED()</div>
+                    <div class="content">
+                        <p>Viser hvilken måned en dato er. Der dannes et tal mellem 1-12. fx vil den 01-03-2022 giver 3.</p>
+                    </div>
+                    <div class="footer">Dato og tid</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=NU()</div>
+                    <div class="content">
+                        <p>Viser hvilken dato det er idag, samt hvilket tidspunkt. Den opdaterer automatisk, når du åbner din projektmappe, og hvis der sker ændringer i arket.</p>
+                    </div>
+                    <div class="footer">Dato og tid</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=SEKUND()</div>
+                    <div class="content">
+                        <p>Finder sekundtallet i et tidspunkt. fx vil 06:30:15 give 15.</p>
+                    </div>
+                    <div class="footer">Dato og tid</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=SLUT.PÅ.MÅNED()</div>
+                    <div class="content">
+                        <p>Viser den sidste dato i en måned ud fra en given dato. Man skal angive hvor mange måneder frem, man vil se. </p>
+                    </div>
+                    <div class="footer">Dato og tid</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=TID()</div>
+                    <div class="content">
+                        <p>Generer en tidsværdi. fx hvis du har fast sekund og minut men time findes i en celle.</p>
+                    </div>
+                    <div class="footer">Dato og tid</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=TIME()</div>
+                    <div class="content">
+                        <p>Finder timetallet i et tidspunkt. fx vil 06:30:15 give 06.</p>
+                    </div>
+                    <div class="footer">Dato og tid</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=UGE.NR()</div>
+                    <div class="content">
+                        <p>Viser hvilken uge en dato har. Man kan angive returtype, hvor jeg vil anbefale "21" (for at følge europæisk standard).</p>
+                    </div>
+                    <div class="footer">Dato og tid</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=UGEDAG()</div>
+                    <div class="content">
+                        <p>Viser hvilken ugedag en dato har. Der retuneres et tal mellem 1-7, hvor søndag er 1 mandag er 2 ... lørdag er 7. Kan ændres til tekst ved ændring af formattering. fx giver 31-01-2022 "2".</p>
+                    </div>
+                    <div class="footer">Dato og tid</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=ÅR()</div>
+                    <div class="content">
+                        <p>Viser hvilket år en dato har. fx giver 01-01-2022 "2022".</p>
+                    </div>
+                    <div class="footer">Dato og tid</div>
+                </div>         
+            </div>
+            
+            <!-- <br><br><br><br>
+            <hr> -->
+
+
+            <h2 class="formel-header" id="matematiske">Formler i kategorien matematiske</h2>
+            <div class="cards" id="matematiske">
+                <div class="card">
+                    <div class="header">=AFKORT()</div>
+                    <div class="content">
+                        <p>Afkorter til ønsket decimal, hvis angivet. Der afrundes ikke, men de resterendes decimaler fjernes.</p>
+                    </div>
+                    <div class="footer">Matematiske</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=AFRUND()</div>
+                    <div class="content">
+                        <p>Afrunder til ønsket antal decimaler. De almindelige regneregler følges.</p>
+                    </div>
+                    <div class="footer">Matematiske</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=MIDDEL()</div>
+                    <div class="content">
+                        <p>Angiver middelværdien, dvs. gennemsnittet.</p>
+                    </div>
+                    <div class="footer">Matematiske</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=LIGE()</div>
+                    <div class="content">
+                        <p>Oprunder til nærmeste hele lige tal.</p>
+                    </div>
+                    <div class="footer">Matematiske</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=ULGE()</div>
+                    <div class="content">
+                        <p>Oprunder til nærmeste hele ulige tal.</p>
+                    </div>
+                    <div class="footer">Matematiske</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=RUND.NED()</div>
+                    <div class="content">
+                        <p>Runder et tal ned, til det angivet antal decimaler. Regnerelgerne følges.</p>
+                    </div>
+                    <div class="footer">Matematiske</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=RUND.OP()</div>
+                    <div class="content">
+                        <p>Runder et tal op, til det angivet antal decimaler. Regnerelgerne følges.</p>
+                    </div>
+                    <div class="footer">Matematiske</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=SLUMP()</div>
+                    <div class="content">
+                        <p>Giver et tilfædigt tal mellem 0-0,9. opdater hver gang der sker ændring i projektmappen.</p>
+                    </div>
+                    <div class="footer">Matematiske</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=SLUMP.MELLEM()</div>
+                    <div class="content">
+                        <p>Giver et tilfædigt tal mellem to angivet tal. opdater hver gang der sker ændring i projektmappen.</p>
+                    </div>
+                    <div class="footer">Matematiske</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=STØRSTE()</div>
+                    <div class="content">
+                        <p>Finder det største antal tal, ud fra hvad man angiver. Angives 1, findes det største tal. Angives 3, findes de tre største tal i en område.</p>
+                    </div>
+                    <div class="footer">Matematiske</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=SUBTOTAL()</div>
+                    <div class="content">
+                        <p>Giver mulighed for 11 funktioner, hvor 101-111 ignorerer skjulte celler og 1-11 tager skjulte celler med. </p>
+                    </div>
+                    <div class="footer">Matematiske</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=SUM()</div>
+                    <div class="content">
+                        <p>Summerer et angivet område. Tager højde for negative og postive tal.</p>
+                    </div>
+                    <div class="footer">Matematiske</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=SUM.HVIS()</div>
+                    <div class="content">
+                        <p>Summerer et angivet område ud fra et kriterie. Det er muligt at angive specielt sumområde.</p>
+                    </div>
+                    <div class="footer">Matematiske</div>
+                </div>
+
+            </div>
+            
+            <!-- <br><br><br><br>
+            <hr> -->
+
+
+            <h2 class="formel-header" id="information">Formler i kategorien information</h2>
+            <div class="cards"  id="information">
+                <div class="card">
+                    <div class="header">=CELLE()</div>
+                    <div class="content">
+                        <p>Giver forskellige oplysninger ud fra en celle, alt efter hvad man har specificeret.</p>
+                    </div>
+                    <div class="footer">Information</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=ER.TOM()</div>
+                    <div class="content">
+                        <p>Kontrollerer om en celle er tom.</p>
+                    </div>
+                    <div class="footer">Information</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=ER.ULIGE()</div>
+                    <div class="content">
+                        <p>Kontrollerer om en celle er tom.</p>
+                    </div>
+                    <div class="footer">Information</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=FEJLTYPE()</div>
+                    <div class="content">
+                        <p>Angiver hvilken fejltype der er opstået. Retunerer fejl, hvis der ikke er en fejl.</p>
+                    </div>
+                    <div class="footer">Information</div>
+                </div>
+                
+                <!-- <div class="card">
+                    <div class="header">=IKKE.TILGÆNGELIG()</div>
+                    <div class="content">
+                        <p></p>
+                    </div>
+                    <div class="footer">Information</div>
+                
+                <div class="card">
+                    <div class="header">=ER.IKKE.TILGÆNGELIG()</div>
+                    <div class="content">
+                        <p></p>
+                    </div>
+                    <div class="footer">Information</div>
+                </div> -->
+                
+                <div class="card">
+                    <div class="header">=VÆRDITYPE()</div>
+                    <div class="content">
+                        <p>Angiver hvilken værditype en celle har. fx 1 = tal og 2 = tekst.</p>
+                    </div>
+                    <div class="footer">Information</div>
+                </div>
+            </div>
+            
+            <!-- <br><br><br><br>
+            <hr> -->
+
+
+            <h2 class="formel-header" id="statistik">Formler i kategorien statistik</h2>
+            <div class="cards" id="statistik">
+                <div class="card">
+                    <div class="header">=ANTAL.BLANKE()</div>
+                    <div class="content">
+                        <p>Tæller antal af blanke i et givent område.</p>
+                    </div>
+                    <div class="footer">Statistik</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=HYPPIGST()</div>
+                    <div class="content">
+                        <p>Finder den værdi, der optræder oftest. Giver fejl, hvis ingen dubletter.</p>
+                    </div>
+                    <div class="footer">Statistik</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=MAKS()</div>
+                    <div class="content">
+                        <p>Finder den største værdi i angivet område. Det er muligt at vælge flere områder.</p>
+                    </div>
+                    <div class="footer">Statistik</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=MEDIAN()</div>
+                    <div class="content">
+                        <p>Finder medianen i et angivet området.</p>
+                    </div>
+                    <div class="footer">Statistik</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=MIN()</div>
+                    <div class="content">
+                        <p>Finder den mindste værdi i angivet område. Det er muligt at vælge flere områder.</p>
+                    </div>
+                    <div class="footer">Statistik</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=MINDSTE()</div>
+                    <div class="content">
+                        <p>finder den mindste tal, som er angivet i formlen. Fx. det mindste tal = 1. Andet mindste tal = 2.</p>
+                    </div>
+                    <div class="footer">Statistik</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=PLADS()</div>
+                    <div class="content">
+                        <p>Angiver hvilken plads en celle er ift.  et angivet område. Kan gøres stigende eller faldende.</p>
+                    </div>
+                    <div class="footer">Statistik</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=TÆLV()</div>
+                    <div class="content">
+                        <p>Tæller antal i et område - Både tal og tekst og fejlkoder.</p>
+                    </div>
+                    <div class="footer">Statistik</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=TÆL()</div>
+                    <div class="content">
+                        <p>Tæller antal i et område - Tal og fejlkoder. Tæller ikke celler der indeholder tekst.</p>
+                    </div>
+                    <div class="footer">Statistik</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=TÆL.HVIS()</div>
+                    <div class="content">
+                        <p>Tæller ud fra et kriterier.</p>
+                    </div>
+                    <div class="footer">Statistik</div>
+                </div>
+            </div>
+            
+            <!-- <br><br><br><br>
+            <hr> -->
+
+
+            <h2 class="formel-header" id="tekst">Formler i kategorien tekst</h2>
+            <div class="cards" id="tekst">
+                <div class="card">
+                    <div class="header">=SØG()</div>
+                    <div class="content">
+                        <p>Kigger efter en tekst i en celle. Store bogstaver har <strong>ikke</strong> betydning.</p>
+                    </div>
+                    <p><a id="video" href="#">Se video</a></p>
+                    <div class="footer">Tekst</div>
+                </div>
+
+                <div class="card">
+                    <div class="header">=FIND()</div>
+                    <div class="content">
+                        <p>Kigger efter en tekst i en celle. Store bogstaver <strong>har</strong> betydning.</p>
+                    </div>
+                    <p><a id="video" href="#">Se video</a></p>
+                    <div class="footer">Tekst</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=FJERN.OVERFLØDIGE.BLANKE()</div>
+                    <div class="content">
+                        <p>Fjern mellemrum, så der kun er et tilbage. Hvis cellen kunne indeholder mellemrum, fjernes alle.</p>
+                    </div>
+                    <div class="footer">Tekst</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=VENSTRE()</div>
+                    <div class="content">
+                        <p>Henter antal karakterer begynder fra venstre (forfra).</p>
+                    </div>
+                    <div class="footer">Tekst</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=MIDT()</div>
+                    <div class="content">
+                        <p>Henter antal karakterer begynder den position man angiver (midten af en tekst).</p>
+                    </div>
+                    <div class="footer">Tekst</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=HØJRE()</div>
+                    <div class="content">
+                        <p>Henter antal karakterer begynder fra højre (bagfra).</p>
+                    </div>
+                    <div class="footer">Tekst</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=LÆNGDE()</div>
+                    <div class="content">
+                        <p>Tæller længden af en celle.</p>
+                    </div>
+                    <div class="footer">Tekst</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=SAMMENKÆDNING()</div>
+                    <div class="content">
+                        <p>Sætter to eller flere celler sammen.</p>
+                    </div>
+                    <div class="footer">Tekst</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=SMÅ.BOGSTAVER()</div>
+                    <div class="content">
+                        <p>Gør alle bogstaver i en celle små.</p>
+                    </div>
+                    <div class="footer">Tekst</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=STORE.BOGSTAVER()</div>
+                    <div class="content">
+                        <p>Gør alle bogstaver i en celle store.</p>
+                    </div>
+                    <div class="footer">Tekst</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=STORT.FORBOGSTAV()</div>
+                    <div class="content">
+                        <p>Gør det første bogstav i en celle stort.</p>
+                    </div>
+                    <div class="footer">Tekst</div>
+                </div>
+<!--                 
+                <div class="card">
+                    <div class="header">=TEKST()</div>
+                    <div class="content">
+                        <p></p>
+                    </div>
+                    <div class="footer">Tekst</div>
+                </div> -->
+                
+                <div class="card">
+                    <div class="header">=TRANSPONER()</div>
+                    <div class="content">
+                        <p>Ændrer fra rækker til kolonner eller omvendt.</p>
+                    </div>
+                    <div class="footer">Tekst</div>
+                </div>
+            </div>
+<!--             
+            <br><br><br><br>
+            <hr> -->
+
+
+            <!-- <h2 id="selvlavet">Formler i kategorien selvlavet</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="header">=()</div>
+                    <div class="content">
+                        <p></p>
+                    </div>
+                    <div class="footer">Selvlavet</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=()</div>
+                    <div class="content">
+                        <p></p>
+                    </div>
+                    <div class="footer">Selvlavet</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=()</div>
+                    <div class="content">
+                        <p></p>
+                    </div>
+                    <div class="footer">Selvlavet</div>
+                </div>
+                
+                <div class="card">
+                    <div class="header">=()</div>
+                    <div class="content">
+                        <p></p>
+                    </div>
+                    <div class="footer">Selvlavet</div>
+                </div>
+            </div> -->
+            <br><br>
+            
+
+        </main>
+
+
+
+<!-- 
+        
+        <aside></aside>
+        <main>
+            <div class="tabel_container">
+                <h1>DATO OG TID</h1>
+                <div class="tabel_wrapper">
+                    <table class="content_tabel">
+                        <div class="tabel_header">
+                            <tr>
+                                <th>Navn</th>
+                                <th>Beskrivelse</th>
+                                <th>Formel</th>
+                            </tr>
+                        </div>
+                
+                        <div class="tabel_body">
+                            <tr>
+                                <td>=ANTAL.ARBEJDSDAGE()</td>
+                                <td>Viser hvor mange arbejdsdage der er mellem to datoer, fratrukket weekender. Startdag og slutdag er obligatoriske, mens ferie er valgtfri. 
+                                    Man kan lave en liste, som man markerer, hvorefter datoerne inden for perioden bliver trukket ud, med mindre dagen falder på en weekend.</td>
+                                <td>=ANTAL.ARBEJDSDAGE(startdag;slutdag;[feriedage])</td>
+                            </tr>
+                            <tr>
+                                <td>ARBEJDSDAG()</td>
+                                <td>Viser den dato efter startdato, med det antal arbejdsdage man har angivet, samt fratrukket feriedage og weekender. fx vil 7 arbejdsdage talt fra den 1/1-22 blive den 11/1-22 pga weekend bliver fratrkket.</td>
+                                <td>ARBEJDSDAG(startdato;dage;[Feriedage])</td>
+                            </tr>
+                            <tr>
+                                <td>=DAG()</td>
+                                <td>Viser dagen ud fra en fuld dato. fx vil den 1/1-2022 give resultatet 1, og den 13/1-2022 vil blive 13.</td>
+                                <td>=DAG(DATO)</td>
+                    
+                            </tr>
+                            <tr>
+                                <td>=DATO()</td>
+                                <td>Generer en datoværdi. fx hvis du har fast dag og måned men årstal findes i en celle.</td>
+                                <td>=DATO(ÅR;MÅNED;DAG)</td>
+                            </tr>
+                            <tr>
+                                <td>=IDAG()</td>
+                                <td>Viser hvilken dato det er idag. Den opdaterer automatisk, når du åbner din projektmappe.</td>
+                                <td>=IDAG()</td>
+                            </tr>
+                            <tr>
+                                <td>=MINUT()</td>
+                                <td>Finder minuttallet i et tidspunkt. fx vil 06:30 give 30.</td>
+                                <td>=MINUT(06:30)</td>
+                            </tr>
+                            <tr>
+                                <td>=MÅNED()</td>
+                                <td>Viser hvilken måned en dato er. Der dannes et tal mellem 1-12. fx vil den 01-03-2022 giver 3.</td>
+                                <td>=MÅNED(01-03-2022)</td>
+                            </tr>
+                            <tr>
+                                <td>=NU()</td>
+                                <td>Viser hvilken dato det er idag, samt hvilket tidspunkt. Den opdaterer automatisk, når du åbner din projektmappe, og hvis der sker ændringer i arket.</td>
+                                <td>=NU()</td>
+                            </tr>
+                            <tr>
+                                <td>=SEKUND()</td>
+                                <td>Finder sekundtallet i et tidspunkt. fx vil 06:30:15 give 15.</td>
+                                <td>=MINUT(06:30:15)</td>
+                            </tr>
+                            <tr>
+                                <td>=SLUT.PÅ.MÅNED()</td>
+                                <td>Viser den sidste dato i en måned ud fra en given dato. Man skal angive hvor mange måneder frem, man vil se. fx vil 1/2-2022 og 0 måneder frem giver 28/01-2022. Havde man angivet 1 i stedet for 0, ville man få 31-03-2022.</td>
+                                <td>=SLUT.PÅ.MÅNED(01-02-2022;0)</td>
+                            </tr>
+                            <tr>
+                                <td>=TID()</td>
+                                <td>Generer en tidsværdi. fx hvis du har fast sekund og minut men time findes i en celle.</td>
+                                <td>=TID(10;30;50)</td>
+                            </tr>
+                            <tr>
+                                <td>=TIME()</td>
+                                <td>Finder timetallet i et tidspunkt. fx vil 06:30:15 give 06.</td>
+                                <td>=TIME(06:30:15)</td>
+                            </tr>
+                            <tr>
+                                <td>=UGE.NR()</td>
+                                <td>Viser hvilken uge en dato har. Man kan angive returtype, hvor jeg vil anbefale "21" (for at følge europæisk standard).</td>
+                                <td>=UGE.NR(01-01-2022;21)</td>
+                            </tr>
+                            <tr>
+                                <td>=UGEDAG()</td>
+                                <td>Viser hvilken ugedag en dato har. Der retuneres et tal mellem 1-7, hvor søndag er 1 mandag er 2 ... lørdag er 7. Kan ændres til tekst ved ændring af formattering. fx giver 31-01-2022 "2".</td>
+                                <td>=UGEDAG(31-01-2022)</td>
+                            </tr>
+                            <tr>
+                                <td>=ÅR()</td>
+                                <td>Viser hvilket år en dato har. fx giver 01-01-2022 "2022".</td>
+                                <td>=ÅR(01-01-2022)</td>
+                            </tr>
+                        </div>
+                    </table>
+                </div>
+                <br>
+            
+                <h1>LOGISKE</h1>
+                <div class="tabel_wrapper"> 
+                    <table class="content_tabel">
+                        <div class="tabel_header">
+                            <tr>
+                                <th>Navn</th>
+                                <th>Beskrivelse</th>
+                                <th>Formel</th>
+                            </tr>
+                        </div>
+            
+                        <div class="tabel_body">
+                            <tr>
+                                <td>=ELLER()</td>
+                                <td>Undersøger om minimum 1 af flere kriterier er sande. fx om flere celler er større end 500. Viser SAND hvis minimum en test er SAND, ellers vises FALSK.</td>
+                                <td>=ELLER(A1>200;A2>500)</td>
+                            </tr>
+            
+                            <tr>
+                                <td>HVIS()</td>
+                                <td>Undersøger om og en celle lever op til et kriterie. fx om en værdi er større end 500.</td>
+                                <td>=HVIS(A1>500;"Større";"Ikke større")</td>
+                            </tr>
+            
+                            <tr>
+                                <td>=IKKE()</td>
+                                <td>Undersøger om det modsatte af HVIS(). fx om 100 > 500 vises FALSK.</td>
+                                <td>=IKKE()</td>
+                            </tr>
+            
+                            <tr>
+                                <td>=OG()</td>
+                                <td>Undersøger om to kriterier er opfyldt. Der kan være flere end to kriterier.</td>
+                                <td>=OG(A1>1;A2=>0)</td>
+                            </tr>
+                        </div>
+                    </table>
+                </div>
+                <br>
+            
+                <h1>MATEMATISKE</h1>
+                <div class="tabel_wrapper"> 
+                    <table class="content_tabel">
+                        <div class="tabel_header">
+                            <tr>
+                                <th>Navn</th>
+                                <th>Beskrivelse</th>
+                                <th>Formel</th>
+                            </tr>
+                        </div>
+            
+                        <div class="tabel_body">
+                            <tr>
+                                <td>=AFKORT()</td>
+                                <td>Afkorter til ønsket decimal, hvis angivet. Der afrundes ikke, men de resterendes decimaler fjernes. </td>
+                                <td>=AFKORT()</td>
+                            </tr>
+                            <tr>
+                                <td>AFRUND()</td>
+                                <td>Afrunder til ønsket antal decimaler. De almindelige regneregler følges. </td>
+                                <td>=AFRUND()</td>
+                            </tr>
+                            <tr>
+                                <td>=MIDDEL()</td>
+                                <td>Angiver middelværdien, dvs. gennemsnittet.</td>
+                                <td>=MIDDEL()</td>
+                            </tr>
+                            <tr>
+                                <td>=LIGE()</td>
+                                <td>Oprunder til nærmeste hele lige tal. </td>
+                                <td>=LIGE()</td>
+                            </tr>
+                            <tr>
+                                <td>=ULIGE()</td>
+                                <td>Oprunder til nærmeste hele Ulige tal.</td>
+                                <td>=ULIGE()</td>
+                            </tr>
+                            <tr>
+                                <td>=ROMERTAL()</td>
+                                <td>Danner romertal optil 3999. </td>
+                                <td>=ROMERTAL()</td>
+                            </tr>
+                            <tr>
+                                <td>=RUND.NED()</td>
+                                <td>Runder et tal ned, til det angivet antal decimaler. Regnerelgerne følges. </td>
+                                <td>=RUND.NED()</td>
+                            </tr>
+                            <tr>
+                                <td>=RUND.OP()</td>
+                                <td>Runder et tal op, til det angivet antal decimaler. Regnerelgerne følges. </td>
+                                <td>=RUND.OP()</td>
+                            </tr>
+                            <tr>
+                                <td>=SLUMP()</td>
+                                <td>Giver et tilfædigt tal mellem 0-0,9. opdater hver gang der sker ændring i projektmappen. </td>
+                                <td>=SLUMP()</td>
+                            </tr>
+                            <tr>
+                                <td>=SLUMP.MELLEM()</td>
+                                <td>Giver et tilfædigt tal mellem to angivet tal. opdater hver gang der sker ændring i projektmappen. </td>
+                                <td>=SLUMP.MELLEM()</td>
+                            </tr>
+                            <tr>
+                                <td>=STØRSTE()</td>
+                                <td>Finder det største antal tal, ud fra hvad man angiver. Angives 1, findes det største tal. Angives 3, findes de tre største tal i en område.</td>
+                                <td>=STØRSTE()</td>
+                            </tr>
+                            <tr>
+                                <td>=SUBTOTAL()</td>
+                                <td>Giver mulighed for 11 forskellige funktioner, hvor 101-111 ignorerer skjulte celler og 1-11 tager skjulte celler med. </td>
+                                <td>=SUBTOTAL()</td>
+                            </tr>
+                            <tr>
+                                <td>=SUM()</td>
+                                <td>Summerer et angivet område. Tager også værdi i en skjult celle med. </td>
+                                <td>=SUM()</td>
+                            </tr>
+                            <tr>
+                                <td>=SUM.HVIS()</td>
+                                <td>Summerer et angivet område ud fra et kriterie. Det er muligt at angive specielt sumområde.</td>
+                                <td>=SUM.HVIS()</td>
+                            </tr>
+                        </div>
+                    </table>
+                </div>
+            </div> 
+            
+        </main> -->
+        
+        <!-- Viser menu på mobilversion -->
+        <script>
+            (function() {
+                var menu = document.querySelector("ul"),
+                    menulink = document.querySelector("#menu-burger");
+
+                menulink.addEventListener("click", function(e) {
+                    menu.classList.toggle("active");
+                    e.preventDefault();
+                });
+            })();
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="pic/alexandar - Logo_4.png" type="image/x-icon">
+        <title>Excel-Alex - Skabeloner</title>
+    </head>
+
+    <body>
+        
+        <aside>
+            <figure>
+                <div id="avatar">
+                    <a href="kontakt.html"><img src="pic/Profilbilled.jpg" alt="Profilbillede af ejeren af siden"></a>
+                </div>
+                <figcaption>Alexandar Kuburovic</figcaption>
+            </figure>
+                
+            <svg id="menu-burger" width="60" height="40" viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.03125 6.25H52.9688C53.2266 6.25 53.4375 6.39062 53.4375 6.5625V9.0625C53.4375 9.23438 53.2266 9.375 52.9688 9.375H7.03125C6.77344 9.375 6.5625 9.23438 6.5625 9.0625V6.5625C6.5625 6.39062 6.77344 6.25 7.03125 6.25ZM7.03125 30.625H52.9688C53.2266 30.625 53.4375 30.7656 53.4375 30.9375V33.4375C53.4375 33.6094 53.2266 33.75 52.9688 33.75H7.03125C6.77344 33.75 6.5625 33.6094 6.5625 33.4375V30.9375C6.5625 30.7656 6.77344 30.625 7.03125 30.625ZM7.03125 18.4375H52.9688C53.2266 18.4375 53.4375 18.5781 53.4375 18.75V21.25C53.4375 21.4219 53.2266 21.5625 52.9688 21.5625H7.03125C6.77344 21.5625 6.5625 21.4219 6.5625 21.25V18.75C6.5625 18.5781 6.77344 18.4375 7.03125 18.4375Z" fill="black"/>
+            </svg>
+            <nav>
+                <ul class="ul-menu">
+                    <li><a href="index.html" id="start">Start</a></li>
+                    <li><a href="formler.html" id="formler">Formler</a></li>
+                    <li><a href="skabeloner.html" id="skabeloner" style="background-color: #fff; border-bottom: 3px solid var(--green);">Skabeloner</a></li>
+                    <li><a href="kontakt.html" id="kontakt">Kontakt</a></li>
+                </ul>  
+            </nav>
+        </aside>
+
+        <main>
+            <h2 style="color: red;">Under opbygning</h2>
+
+            <div class="text">
+                <h1>Create somthing from nothing</h1>
+                <p>Eller brug en af mine skabeloner!</p>
+                <p>Du er velkommen til at downloade en skabelon, brug den som den er, byg videre på den eller skab noget helt nyt.</p>
+            </div>
+        </main>
+
+        
+        <!-- Viser menu på mobilversion -->
+        <script>
+            (function() {
+                var menu = document.querySelector("ul"),
+                    menulink = document.querySelector("#menu-burger");
+
+                menulink.addEventListener("click", function(e) {
+                    menu.classList.toggle("active");
+                    e.preventDefault();
+                });
+            })();
+        </script>
+
+    </body>
+</html>
